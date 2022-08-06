@@ -1,14 +1,9 @@
-const config = require('./src/config');
-
-module.exports = {
+import type { GatsbyConfig } from "gatsby"
+const config: GatsbyConfig = {
   siteMetadata: {
-    title: config.siteTitle,
-    siteUrl: config.siteUrl,
-    description: config.siteDescription,
-    image: '/images/og.png',
+    title: "TEST",
   },
-  plugins: [
-    `gatsby-plugin-react-helmet`,
+  plugins: [`gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
@@ -17,8 +12,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'verifiedsadboy.github.io',
-        short_name: 'verifiedsadboy.github.io',
+        name: 'ChandrikaDeb',
+        short_name: 'ChandrikaDeb',
         start_url: '/',
         background_color: config.colors.darkNavy,
         theme_color: config.colors.navy,
@@ -145,5 +140,6 @@ module.exports = {
         trackingId: config.googleAnalyticsID,
       },
     },
-  ],
-};
+],
+}
+export default config
