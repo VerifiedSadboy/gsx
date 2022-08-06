@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'verifiedsadboy.github.ioverifiedsadboy.github.io',
+        name: 'verifiedsadboy.github.io',
         short_name: 'verifiedsadboy.github.io',
         start_url: '/',
         background_color: config.colors.darkNavy,
